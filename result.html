@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Placement Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>CareerConnect</h1>
+
+    <h2>Placement Eligibility Result</h2>
+
+    <p id="name"></p>
+
+    <h3 id="result"></h3>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="company">
+
+        <h3>1. What is CareerConnect?</h3>
+        <p>CareerConnect is a student placement portal.</p>
+
+        <h3>2. How is eligibility checked?</h3>
+        <p>Eligibility is checked on the basis of CGPA.</p>
+
+        <h3>3. What is the minimum CGPA for TCS?</h3>
+        <p>The minimum CGPA required is 7.</p>
+
+        <h3>4. Can I apply for multiple companies?</h3>
+        <p>Yes, students can check eligibility for different companies.</p>
+
+        <h3>5. Does this portal guarantee placement?</h3>
+        <p>No, it only helps students check their eligibility.</p>
+
+    </div>
+
+    <script>
+
+        document.getElementById("name").innerHTML =
+            "Hello " + localStorage.getItem("name");
+
+        document.getElementById("result").innerHTML =
+            localStorage.getItem("result");
+
+    </script>
+
+</body>
+</html>
